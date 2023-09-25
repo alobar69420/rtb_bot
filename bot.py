@@ -52,7 +52,7 @@ async def swong(ctx, *, name: str):
 
 @bot.command(name='position', help="Responds with weath and position of requested person")
 @is_allowed_channel()
-async def swong(ctx, *, name: str):
+async def position(ctx, *, name: str):
 	response = rtb_formatter.format_position(name)
 	await ctx.send(response)
 
